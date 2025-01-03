@@ -6,14 +6,15 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/vue-project-cursos/', // Nombre del repositorio en GitHub
+  // Configuración base para GitHub Pages
+  base: '/vue-project-cursos/', // Reemplaza con el nombre de tu repositorio en GitHub
   plugins: [
     vue(),
     vueDevTools(),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)), // Alias para facilitar imports desde "src"
     },
   },
 })
