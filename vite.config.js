@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/vue-project-cursos/', // Nombre del repositorio en GitHub
   plugins: [
     vue(),
     vueDevTools(),
